@@ -195,6 +195,67 @@ class IncAndDec
 }
 //
 
+Conditional Operator :
+
+Examplar  Program:
+
+//
+class Conditional
+{
+	public static void main(String[] args)
+	{
+		int a=40;
+		int b=200;
+		int c= (a>b)? a:b;
+		// Smallest of two numbers
+		System.out.println((a<b)?a:b);
+		//Greatest of two numbers.
+  		System.out.println((a>b)? "a is bigger" : " b is bigger ");		
+}
+}
+//
+
+
+Greatest of three numbers:
+
+//
+class Conditional
+{
+	public static void main(String[] args)
+	{
+		int a=800;
+		int b=400;
+		int c=900;
+		System.out.println((a>b)?((a>c)?a:c):(b>c)?b:c);	
+}
+}
+//
+
+
+
+  Scanner Class:
+
+import java.until.scanner;
+Examplar Program:
+
+//
+import java.util.Scanner;
+class Dynamic
+{
+	public static void main(String[] args)
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter three numbers");
+		int a= scan.nextInt();
+		int b= scan.nextInt();
+		int c= scan.nextInt();
+		System.out.println("The Greer number is :");
+		System.out.println((a>b)?((a>c)?a:c):(b>c)?b:c);
+	}
+}
+//
+
+
 
 
 

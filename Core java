@@ -1,4 +1,4 @@
-                               			       DATE: 7/10/2022
+                               			                DATE: 7/10/2022
 
 Archtecture of software development:
 
@@ -139,7 +139,7 @@ System.out.println(a/10);//123
 System.out.println(a%10);//4
 //
 
-							DATE: 9/10/2022
+						        	DATE: 9/10/2022
 
 
 Arithematic Operator:
@@ -238,6 +238,8 @@ class Conditional
 import java.until.scanner;
 Examplar Program:
 
+Program to get Greatest of three numbers:
+
 //
 import java.util.Scanner;
 class Dynamic
@@ -256,13 +258,187 @@ class Dynamic
 //
 
 
+Program to get odd or even:
+
+//
+import java.util.Scanner;
+class Dynamic
+{
+	public static void main(String[] args)
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter a number");
+		int a= scan.nextInt();
+		
+		System.out.println("The number is :");
+		System.out.println(((a%2)==0) ?"even" : "odd" );
+	}
+}
+//
+
+
+Flow Control statement :
+
+1. Conditional Statement .
+2. Looping Statement.
+
+Conditional Statement:
+if statement
+if else statement
+if else if ladder 
+switch statement
+
+
+Examplar program on LEAP YEAR:
+
+//
+import java.util.Scanner;
+class Dynamic
+{
+	public static void main(String[] args)
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter the  year :");
+		int a=scan.nextInt();
+		if((a%4==0 && a%100!=0)||(a%400 ==0))
+		{
+			System.out.println("It is a Leap year");
+		}
+		else
+		{
+		System.out.println("It is not a leap year");
+		}
+			
+	}
+}	
+//
+
+							DATE:10/10/22
+
+Electricity bill Generator :
+
+First 50==free
+next 50==3
+next 50==5
+next 50==8
+next 50==10
+next 50==20
+
+//
+import java.util.Scanner;
+
+class elec
+{
+    public static void main(String[] args)
+    {
+   Scanner sc=new Scanner(System.in);
+   System.out.println("Electricity bill generator");
+   System.out.print("Enter the Due Amount:");
+   int due=sc.nextInt();
+   System.out.print("Enter the Units Consumed:");    
+   double unit=sc.nextInt();
+   double amt=0;
+   if(unit<=50)
+     amt=amt+due;
+   else if(unit>50 && unit <=100)
+     amt=(unit-50)*3 +due;
+   else if(unit>100 && unit<=150)
+     amt=(50 * 3) + ((unit-100)*5 )+ due;
+   else if(unit>150 && unit <=200)
+    amt=(50 * 3) + (50 * 5) + ((unit - 150)*8) + due;
+   else if(unit>200 && unit <=250)
+    amt=(50 * 3) + (50 * 5) + (50 * 8) + ((unit - 200)*10) + due;
+   else 
+    amt=(50 * 3) + (50 * 5) + (50 * 8) * ( 50 * 10)* ((unit-250)* 20);
+   double disc=0;
+   System.out.println("Bill amount without Discount="+amt);
+   disc=amt*0.20;
+   amt=amt-disc;
+   System.out.println("Bill amount after Discount="+amt);
+   System.out.print("Discount="+disc);
+
+   }
+}
+//
+
+Switch statement :
+
+Syntax:
+ 
+switch(value/expression/variable)
+{
+	case value/expression:
+	break;
+	case value expression:
+	break;
+	
+	default:
+}
+
+=> In Switch  statements double , float , long , boolean are not allowed.
+
+
+Looping Statements:
+
+While Loop:
+Sum of all the integers using while loop.
+Finding the Factorial using While lopp.
+Printing all the even numbers.
+
+Examplar program on Printing sum of all the Digits given :
+
+//
+class SumDigit 
+{
+public static void main(String[]args)
+{
+int num=123;
+int sum=0;
+int rem=0;
+
+while(num>0)
+{
+rem=num%10;
+sum+=rem;
+num=num/10;
+}
+system.out.println("Sum of all the digits is :"+sum);
+}
+}
+//
 
 
 
+Examplar program on PALINDROME:
 
+//
+import java.util.Scanner;
 
+class a{
+public static void main(String []args)
+{
+Scanner scan= new Scanner(System.in);
+int i=0,n=0,s=0;
+System.out.println("Enter the  numbers:");
+i=scan.nextInt();
+int temp =i;
+while(i!=0)
+{
 
-
+n=i%10;
+s=s*10+n;
+n=n/10;
+}
+System.out.println(s);
+if(temp==s)
+{
+System.out.println("it is a Palindrome ");
+else 
+System.out.println("It is not a palindrome");
+}
+}
+}
+//
 
 
 
